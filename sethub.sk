@@ -1,0 +1,15 @@
+#DON'T TOUCH THIS IF YOU DON'T KNOW WHAT YOU ARE DOING!
+
+command /sethub:
+  trigger:
+    if player is op:
+      set {hubloc] to location of player
+      send "&5&lBetterLobby &7> &7You set hub to {hubloc}!" to player
+    else:
+        send "&5&lBetterLobby &7> &7This server is running &bLATEST &7version of BetterLobby!"
+        send "&5&lBetterLobby &7> &3You don't have permission to any subcommand."
+
+command /hub:
+  trigger:
+    teleport player to {hubloc}
+    send "&5&lBetterLobby &7> &7Welcome to Hub!" to player
